@@ -1,0 +1,109 @@
+<mvc:View
+	controllerName="sap.ui.dolphin.controller.TicheteInchise"
+        xmlns:l="sap.ui.layout"
+        xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc"                
+	xmlns="sap.m">
+    
+<!--                    
+                <List
+                       id="ShortProductList"
+                       headerText="Products"
+                       items="{/structuraChestionar}" >
+                       <items>
+                               <StandardListItem`
+                                       title="{nr_tichet}" />
+                       </items>
+               </List> -->
+                    
+
+			<Table id="idTicheteInchise"
+				items="{/ticheteInchise}"
+                                alternateRowColors="true" >
+                            
+				<headerToolbar>
+					<OverflowToolbar>
+						<Title text="Tichete Inchise" level="H2"/>
+                                                
+						<ToolbarSpacer/>
+						<Button
+							tooltip="View Sort Settings"
+							icon="sap-icon://sort"
+							press="handleSortButtonPressed" />
+						<Button
+							tooltip="View Filter Settings"
+							icon="sap-icon://filter"
+							press="handleFilterButtonPressed" />
+						
+					</OverflowToolbar>
+				</headerToolbar>
+                                
+				<infoToolbar>
+					<OverflowToolbar id="vsdFilterBar" visible="false">
+						<Text id="vsdFilterLabel" />
+					</OverflowToolbar>
+				</infoToolbar>
+                                
+				<columns>
+<!--					<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center" width="12em"> 
+                                            <Text text="" />
+                                        </Column> -->
+                                        
+                                        <Column width="12em">
+                                            <Text text="Nr tichet" />
+                                        </Column>
+                                        
+					<Column minScreenWidth="Tablet" demandPopin="true"  width="12em"> 
+                                            <Text text="Prioritate" />
+                                        </Column>
+					
+                                        <Column minScreenWidth="Tablet" demandPopin="true" hAlign="End"  width="12em"> 
+                                            <Text text="Entitate" />
+                                        </Column>
+                                        					
+                                        <Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center"  width="12em"> 
+                                            <Text text="Serviciu" />
+                                        </Column>
+                                                                                
+                                        <Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center" width="12em"> 
+                                            <Text text="Componenta" />
+                                        </Column>
+                                        
+                                        <Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center" width="12em"> 
+                                            <Text text="Stare" />
+                                        </Column>                                        
+					
+                                        <Column minScreenWidth="Tablet" demandPopin="true" > 
+                                            <Text text="Descriere" /> 
+                                        </Column> 
+                                                                              
+                                        
+                                        
+				</columns>
+                                
+				<items>
+					<ColumnListItem
+                                            type="Active"
+                                            press="onPress">
+						<cells>
+<!--                                                     <Button
+							text="Asigneaza tichet" 
+							icon="sap-icon://action"
+                                                        press="seteazaStare"
+                                                     />-->
+                                                
+                                                    <Text text="{nr_tichet}" />
+                                                    <Text text="{den_prioritate}" />
+                                                    <Text text="{den_entitate_activa}" />
+                                                    <Text text="{den_serviciu}" />
+                                                    <Text text="{den_componenta}" />
+                                                    <Text text="{den_stare}" />
+                                                    <Text text="{descriere}" />
+                                                                
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+                        
+	
+</mvc:View>

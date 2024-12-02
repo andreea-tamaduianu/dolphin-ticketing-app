@@ -1,0 +1,113 @@
+<mvc:View height="100%" 
+          controllerName="sap.ui.dolphin.controller.AdaugaTichet"
+          xmlns:mvc="sap.ui.core.mvc"
+          xmlns:l="sap.ui.layout"
+          xmlns:f="sap.ui.layout.form"
+          xmlns:core="sap.ui.core"
+          xmlns="sap.m">
+  
+         <Panel headerText="Adaugare Tichet" class="sapUiResponsiveMargin" width="auto">
+            <content>
+                
+                <Label text="Numar tichet:" class="sapUiSmallMargin"/>
+                <Input id="input_nr_tichet" value="{tichetmodel>/nr_tichet}"  width="110px" type="Text" enabled="false" />
+                
+                <Label text="Nume Alarma:" class="sapUiSmallMargin"/>                            
+                <Input id="input_alarma" value="{tichetmodel>/nume_alarma}" width="350px" type="Text"  enabled="{tichetmodel>/addop}"  />
+                
+                
+            </content>
+          </Panel>
+          
+          
+          <Panel headerText="" class="sapUiResponsiveMargin" width="auto">  
+            <content>
+                <Label text="Prioritate:" class="sapUiSmallMargin"/>                            
+                <!--
+                <Input id="input_prioritate" value="{tichetmodel>/prioritate}" width="60px" type="Text"  enabled="{tichetmodel>/addop}"  />
+                
+                <Select id="select_prioritate" selectedKey="{tichetmodel>/prioritate}"  width="120px"  enabled="{tichetmodel>/addop}"  >
+                    <items>
+                        <core:Item text="Nivel prioritate P1" key="P1"/>
+                        <core:Item text="Nivel prioritate P2" key="P2"/>
+                        <core:Item text="Nivel prioritate P3" key="P3"/>
+                        <core:Item text="Nivel prioritate P4" key="P4"/>
+                    </items>
+                </Select>
+                -->
+                
+                <Label text="Serviciu:" class="sapUiSmallMargin"/>                            
+                <!--
+                <Input id="input_serviciu" value="{tichetmodel>/serviciu}" width="150px" type="Text" />
+                <Select id="select_serviciu" selectedKey="{tichetmodel>/serviciu}" width="120px"  enabled="{tichetmodel>/addop}"  >
+                    <items>
+                        <core:Item text="Serviciul 1" key="S1"/>
+                        <core:Item text="Serviciul 2" key="S2"/>
+                        <core:Item text="Serviciul 3" key="S3"/>
+                        <core:Item text="Serviciul 4" key="S4"/>                        
+                    </items>
+                </Select>
+                -->
+                
+                <Label text="Componenta:" class="sapUiSmallMargin"/>      
+                <!--                      
+                <Input id="input_componenta" value="{tichetmodel>/componenta}" width="150px" type="Text"  enabled="{tichetmodel>/addop}"  />
+                <Select id="select_componenta" selectedKey="{tichetmodel>/componenta}" width="120px"  enabled="{tichetmodel>/addop}"  >
+                    <items>
+                        <core:Item text="Componenta 1" key="C1"/>
+                        <core:Item text="Componenta 2" key="C2"/>
+                    </items>
+                </Select>
+                -->
+                
+            </content>   
+          </Panel>
+          
+          <Panel headerText="" class="sapUiResponsiveMargin" width="auto">  
+            <content>
+                <Label text="Entitate Activa:" class="sapUiSmallMargin"/>                            
+                <!--
+                <Input id="input_entitate_activa" value="{tichetmodel>/entitate_activa}" width="260px" type="Text"   enabled="{tichetmodel>/addop}" />
+                
+                <Select id="select_entitate_activa" selectedKey="{tichetmodel>/entitate_activa}" width="260px"  enabled="{tichetmodel>/addop}"  >
+                    <items>
+                        <core:Item text="Entitatea 1" key="E1"/>
+                        <core:Item text="Entitatea 2" key="E2"/>
+                        <core:Item text="Entitatea 3" key="E3"/>
+                        <core:Item text="Entitatea 4" key="E4"/>                                                
+                    </items>
+                </Select>
+                -->
+                
+            </content>
+                <Label text="Stare:" class="sapUiSmallMargin"/>                            
+                <Input id="input_stare" value="{tichetmodel>/stare}" width="200px" enabled="false"  type="Text"  />
+             </content>   
+          </Panel>
+             
+          <Panel headerText="" class="sapUiResponsiveMargin" width="auto">  
+            <content>
+                <Label text="Descriere:" class="sapUiSmallMargin"/>                            
+                <Input id="input_descriere" value="{tichetmodel>/descriere}" width="600px" type="Text"  enabled="{tichetmodel>/addop}"  />
+             </content>   
+          </Panel>
+             
+          <Panel headerText="" class="sapUiResponsiveMargin" width="auto">
+            
+            <content>
+                
+                <Button text="Salvare" press="clickButtonSalvare"  ariaDescribedBy="defaultButtonDescription genericButtonDescription"  enabled="{tichetmodel>/addop}"  ></Button>
+                
+                <Label text=" {tichetmodel>/afisare_mesaj}" class="sapUiSmallMargin"/>
+                
+                <!--
+                <Label text=" " class="sapUiSmallMargin"/>
+                
+                <Button text="Stergere" press="clickButtonStergere"  ariaDescribedBy="defaultButtonDescription genericButtonDescription"  enabled="!{tichetmodel>/addop}"  ></Button>
+                 -->
+                 
+            </content>
+
+        </Panel>
+
+</mvc:View>

@@ -1,0 +1,54 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="LISTE" directorySegmentName="seg_0" id="5B3F6D1A-6D7D-2624-FBDF-50EE27B2D2E5">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:09:49 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<schemaObject>7AADC8E5-0B95-5DBE-40E6-F5482C817A75</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>37B77190-531E-968D-C748-C4F9BE80E8EC</segment>
+<tableSpace>C112C3A7-6A55-4120-1670-1BCD1D1952CB</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="TIP_LISTA" id="30CCFBF5-6AF4-3818-F536-01F5E084E29F">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:09:49 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_LISTA" id="5A10B346-F7AB-72C0-6265-363788D93992">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:09:49 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DEN_TIP_LISTA" id="EAEEFE9D-9F2D-4B01-5240-5321162017E7">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:09:49 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_LISTE" id="98120059-D6B4-58A1-8CB6-1163535BBE1D">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:09:50 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<schemaObject>7AADC8E5-0B95-5DBE-40E6-F5482C817A75</schemaObject>
+<segment>B3A4C54F-4DA4-7BB0-DA8B-A17E52D75CD6</segment>
+<tableSpace>C112C3A7-6A55-4120-1670-1BCD1D1952CB</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_LISTE" id="27EB37A1-C80B-0C34-D235-C9BBDC4CF7E9">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:09:50 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<segment>B3A4C54F-4DA4-7BB0-DA8B-A17E52D75CD6</segment>
+<tableSpace>C112C3A7-6A55-4120-1670-1BCD1D1952CB</tableSpace>
+<existingIndex>98120059-D6B4-58A1-8CB6-1163535BBE1D</existingIndex>
+<indexSegment>B3A4C54F-4DA4-7BB0-DA8B-A17E52D75CD6</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

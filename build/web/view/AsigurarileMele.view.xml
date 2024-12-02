@@ -1,0 +1,11 @@
+<mvc:View height="100%" 
+          controllerName="sap.ui.dolphin.controller.App"
+          xmlns:mvc="sap.ui.core.mvc"
+          xmlns:l="sap.ui.layout"
+          xmlns:f="sap.ui.layout.form"
+          xmlns:core="sap.ui.core"
+          xmlns="sap.m">
+  
+        <Label text="{i18n>adrEmail}" />
+
+</mvc:View>

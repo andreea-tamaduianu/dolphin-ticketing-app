@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="20FA71D4-52BF-1BD2-1047-F9EBD29E988B" containerWithKeyObject="C818CDF8-81B6-B7FC-60B1-5A6BF60D4A06" localFKIndex="03BDDFEA-33E2-60FE-1180-A72E2328D17A" name="FK_TICHETE_COMPONENTA">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>DOLPHIN</sourceObjSchema>
+<sourceObjName>FK_TICHETE_COMPONENTA</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:04 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<referredTableLongName>DOLPHIN.LISTE_DEF</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>339C4747-2226-8505-81A7-7BD946B5AFE7</referredTableID>
+<keyObject>23813CA6-2D3B-C2DD-DA22-616F4B6A43C3</keyObject>
+<referredKeyID>23813CA6-2D3B-C2DD-DA22-616F4B6A43C3</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID_LISTA_DEF</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

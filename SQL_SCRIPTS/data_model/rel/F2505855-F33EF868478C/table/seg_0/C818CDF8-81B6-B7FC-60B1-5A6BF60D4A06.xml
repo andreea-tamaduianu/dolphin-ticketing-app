@@ -1,0 +1,272 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C818CDF8-81B6-B7FC-60B1-5A6BF60D4A06" schemaObject="7AADC8E5-0B95-5DBE-40E6-F5482C817A75" name="TICHETE">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>DOLPHIN</sourceObjSchema>
+<sourceObjName>TICHETE</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:04 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_TICHET" id="FAFC35AD-38E0-ABDF-9508-6629D4D67AED">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>TICHETE</sourceObjSchema>
+<sourceObjName>ID_TICHET</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:04 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_TICHET" id="0823A592-781A-8A96-F97C-37A6BE75C5DE">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>TICHETE</sourceObjSchema>
+<sourceObjName>NR_TICHET</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:04 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUME_ALARMA" id="1776AC8A-9FCA-9E6A-950F-EC4F4CC77C0F">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>TICHETE</sourceObjSchema>
+<sourceObjName>NUME_ALARMA</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:04 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_PRIORITATE" id="4CFF2B04-C309-9A2F-EBA4-89A6FBF48E12">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>TICHETE</sourceObjSchema>
+<sourceObjName>ID_PRIORITATE</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:04 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="47EE8914-4489-BEBE-8C74-55D4D54AD188" referredColumn="B1A851E2-3A15-9261-75F6-F9F6DD1680FB"/>
+</associations>
+</Column>
+<Column name="ID_ENTITATE_ACTIVA" id="BF3D18CF-5C2E-6FDA-3CF8-7063B95D2C9B">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>TICHETE</sourceObjSchema>
+<sourceObjName>ID_ENTITATE_ACTIVA</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:04 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C04C041C-FD05-868E-F3FD-DB313CA96AFD" referredColumn="B1A851E2-3A15-9261-75F6-F9F6DD1680FB"/>
+</associations>
+</Column>
+<Column name="DESCRIERE" id="C82CC751-398A-E13D-4CB3-F49184D3DE01">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>TICHETE</sourceObjSchema>
+<sourceObjName>DESCRIERE</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:04 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>400 BYTE</dataTypeSize>
+<ownDataTypeParameters>400 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_SERVICIU" id="A041A7DB-45ED-0BB2-3BB1-D3AED9687F4F">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>TICHETE</sourceObjSchema>
+<sourceObjName>ID_SERVICIU</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:04 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F6821288-8917-BDF7-EFE6-E7627E2E06E5" referredColumn="B1A851E2-3A15-9261-75F6-F9F6DD1680FB"/>
+</associations>
+</Column>
+<Column name="ID_COMPONENTA" id="8DD194C5-E56F-205E-39A3-0AC697CF0122">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>TICHETE</sourceObjSchema>
+<sourceObjName>ID_COMPONENTA</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:04 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="20FA71D4-52BF-1BD2-1047-F9EBD29E988B" referredColumn="B1A851E2-3A15-9261-75F6-F9F6DD1680FB"/>
+</associations>
+</Column>
+<Column name="ID_STARE" id="BCEDEEE8-9FC0-8214-7E76-A0B583298978">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>TICHETE</sourceObjSchema>
+<sourceObjName>ID_STARE</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:04 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="86970BF2-3154-B90A-2642-F3E8D7661305" referredColumn="B1A851E2-3A15-9261-75F6-F9F6DD1680FB"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7348E0BE-286F-1C7F-4A7E-7574998F4C63" name="PK_TICHETE">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>DOLPHIN</sourceObjSchema>
+<sourceObjName>PK_TICHETE</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:04 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FAFC35AD-38E0-ABDF-9508-6629D4D67AED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0C47D83E-4F84-BE9E-9DE2-0B817DEFF781" name="UK_TICHETE">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>DOLPHIN</sourceObjSchema>
+<sourceObjName>UK_TICHETE</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:04 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0823A592-781A-8A96-F97C-37A6BE75C5DE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CC5066CE-658F-B448-F59A-A9BB68B8F276" schemaObject="7AADC8E5-0B95-5DBE-40E6-F5482C817A75" name="PK_TICHETE">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>DOLPHIN</sourceObjSchema>
+<sourceObjName>PK_TICHETE</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:04 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FAFC35AD-38E0-ABDF-9508-6629D4D67AED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FA15E4CD-AC0F-A79A-C5C1-BDD227DDA22C" schemaObject="7AADC8E5-0B95-5DBE-40E6-F5482C817A75" name="UK_TICHETE">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>DOLPHIN</sourceObjSchema>
+<sourceObjName>UK_TICHETE</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:04 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0823A592-781A-8A96-F97C-37A6BE75C5DE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="03BDDFEA-33E2-60FE-1180-A72E2328D17A" name="FK_TICHETE_COMPONENTA">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:04 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8DD194C5-E56F-205E-39A3-0AC697CF0122"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9C276C3B-C631-1C16-7D3F-A04F42B09ABF" name="FK_TICHETE_ENTITATE">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:04 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BF3D18CF-5C2E-6FDA-3CF8-7063B95D2C9B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FD7C9CE1-A21F-FF76-2335-72E0689E630C" name="FK_TICHETE_PRIORITATE">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:05 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4CFF2B04-C309-9A2F-EBA4-89A6FBF48E12"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="77EADCB7-D412-B656-E354-BD8FC26BA3CB" name="FK_TICHETE_SERVICIU">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:05 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A041A7DB-45ED-0BB2-3BB1-D3AED9687F4F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="604B5C0C-629C-EA5D-0A20-3AF7E1034D0A" name="FK_TICHETE_STARE">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:05 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BCEDEEE8-9FC0-8214-7E76-A0B583298978"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

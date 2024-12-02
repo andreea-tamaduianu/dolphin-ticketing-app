@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C42E1351-2E43-B6B5-BFAA-DACA3F9DAFA2" containerWithKeyObject="D8C0631E-CBD7-D335-EFD9-205561F6D19A" localFKIndex="56721CBE-4F6E-56E8-F650-97606CF0F00E" name="FK_CHANGEURI_DET">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>DOLPHIN</sourceObjSchema>
+<sourceObjName>FK_CHANGEURI_DET</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:34:31 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<referredTableLongName>DOLPHIN.CHANGEURI</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>44F4BB8F-C6A4-BDD0-E972-82334D3E48E5</referredTableID>
+<keyObject>B6411C08-92A1-C14A-EA2E-212515EA8DBD</keyObject>
+<referredKeyID>B6411C08-92A1-C14A-EA2E-212515EA8DBD</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_CHANGE</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

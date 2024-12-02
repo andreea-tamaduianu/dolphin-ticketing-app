@@ -1,0 +1,51 @@
+<mvc:View height="100%" 
+          controllerName="sap.ui.dolphin.controller.App"
+          xmlns:mvc="sap.ui.core.mvc"
+          xmlns:l="sap.ui.layout"
+          xmlns:f="sap.ui.layout.form"
+          xmlns:core="sap.ui.core"
+          xmlns="sap.m">
+  
+        <Panel headerText="" class="sapUiResponsiveMargin" width="auto">  
+            <content>
+                <Label text="Tip lista:" width="100px" class="sapUiSmallMargin"/>                            
+         
+                <Select id="select_tip_lista" selectedKey="{valorilistemodel>/tip_lista}" width="200px"  enabled="{valorilistemodel>/addop}"  
+                          items="{path: '{valorilistemodel>/tip_lista'
+                                 }">                       
+                      
+                   <core:Item key="{valorilistemodel>id_lista}" text="{valorilistemodel>tip_lista}" />
+                </Select>
+                
+                <Select id="select_tip_lista_def" selectedKey="{valorilistemodel>/tip_lista_def}" width="200px"  enabled="{valorilistemodel>/addop}"  
+                          items="{path: '{valorilistemodel>/tip_lista_def'
+                                 }">                       
+                      
+                   <core:Item key="{valorilistemodel>id_lista_lista_def}" text="{valorilistemodel>tip_lista_def}" />
+                </Select>
+                
+                 <Label text="Cod lista:" width="100px"  class="sapUiSmallMargin"/>
+                <Input id="input_cod_lista" value="{valorilistemodel>/cod_lista}"  width="110px" type="Text" enabled="{valorilistemodel>/addop}" />
+                
+                <Label text="Denumire lista:" class="sapUiSmallMargin"/>                            
+                <Input id="input_den_lista" value="{valorilistemodel>/den_lista}" width="350px" type="Text"  enabled="{valorilistemodel>/addop}"  />
+                
+                                 
+            </content>   
+          </Panel>
+          
+          
+           <Panel headerText="" class="sapUiResponsiveMargin" width="auto">
+            
+            <content>
+                <Button text="Salvare" press="clickButtonSalvare" icon="sap-icon://save" ariaDescribedBy="defaultButtonDescription genericButtonDescription"  enabled="{valorilistemodel>/addop}"  ></Button>
+                <Label text=" " class="sapUiSmallMargin" />
+                <Button text="Anulare" press="clickButtonAnulare" icon="sap-icon://decline" ariaDescribedBy="defaultButtonDescription genericButtonDescription"  enabled="{valorilistemodel>/addop}"  ></Button>
+                 
+                <Label text=" {valorilistemodel>/afisare_mesaj}" class="sapUiSmallMargin"/> 
+                
+            </content>
+
+        </Panel>
+
+</mvc:View>

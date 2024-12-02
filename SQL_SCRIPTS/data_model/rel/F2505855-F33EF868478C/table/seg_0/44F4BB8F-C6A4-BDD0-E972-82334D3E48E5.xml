@@ -1,0 +1,147 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="44F4BB8F-C6A4-BDD0-E972-82334D3E48E5" schemaObject="7AADC8E5-0B95-5DBE-40E6-F5482C817A75" name="CHANGEURI">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>DOLPHIN</sourceObjSchema>
+<sourceObjName>CHANGEURI</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:31:10 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_CHANGE" id="FEDFB3D8-800F-3238-4ABB-2900AA3EA6FE">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>CHANGEURI</sourceObjSchema>
+<sourceObjName>ID_CHANGE</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:31:10 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIERE" id="35E311AA-1623-E033-E897-FAF0B6255158">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>CHANGEURI</sourceObjSchema>
+<sourceObjName>DESCRIERE</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:31:10 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>400 BYTE</dataTypeSize>
+<ownDataTypeParameters>400 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COMENTARII" id="F83C15BB-8224-227A-E573-B53E924E2ED9">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>CHANGEURI</sourceObjSchema>
+<sourceObjName>COMENTARII</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:31:10 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>400 BYTE</dataTypeSize>
+<ownDataTypeParameters>400 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_STARE_CHANGE" id="35D73EAA-0869-256E-126B-F0D04134F7C7">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>CHANGEURI</sourceObjSchema>
+<sourceObjName>ID_STARE_CHANGE</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:31:10 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C1237995-8ABE-A746-B32A-EAD7FD68E69C" referredColumn="B1A851E2-3A15-9261-75F6-F9F6DD1680FB"/>
+</associations>
+</Column>
+<Column name="DATA_START" id="E76D718D-8E93-2CB5-396E-B59C24559707">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>CHANGEURI</sourceObjSchema>
+<sourceObjName>DATA_START</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:31:10 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATA_END" id="D79BFE88-2AF3-2BD5-2A01-24F9E03EF74B">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>CHANGEURI</sourceObjSchema>
+<sourceObjName>DATA_END</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:31:10 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C8B1BD7B-3269-301F-F181-B727C85C4804" name="PK_CHANGEURI">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>DOLPHIN</sourceObjSchema>
+<sourceObjName>PK_CHANGEURI</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:31:10 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FEDFB3D8-800F-3238-4ABB-2900AA3EA6FE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B6411C08-92A1-C14A-EA2E-212515EA8DBD" schemaObject="7AADC8E5-0B95-5DBE-40E6-F5482C817A75" name="PK_CHANGEURI">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>DOLPHIN</sourceObjSchema>
+<sourceObjName>PK_CHANGEURI</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:31:10 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FEDFB3D8-800F-3238-4ABB-2900AA3EA6FE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="914B38D2-9D6D-111D-E04A-FC4959DB7202" name="FK_CHANGEURI_STARE">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:31:10 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="35D73EAA-0869-256E-126B-F0D04134F7C7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

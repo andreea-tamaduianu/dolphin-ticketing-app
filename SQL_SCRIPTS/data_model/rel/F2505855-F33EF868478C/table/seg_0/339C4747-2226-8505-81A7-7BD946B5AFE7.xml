@@ -1,0 +1,158 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="339C4747-2226-8505-81A7-7BD946B5AFE7" schemaObject="7AADC8E5-0B95-5DBE-40E6-F5482C817A75" name="LISTE_DEF">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>DOLPHIN</sourceObjSchema>
+<sourceObjName>LISTE_DEF</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:09:56 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_LISTA_DEF" id="B1A851E2-3A15-9261-75F6-F9F6DD1680FB">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>LISTE_DEF</sourceObjSchema>
+<sourceObjName>ID_LISTA_DEF</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:09:56 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_LISTA" id="DE08A3A9-52D6-1044-C945-E48C76DF6095">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>LISTE_DEF</sourceObjSchema>
+<sourceObjName>ID_LISTA</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:09:56 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="34FEDD79-8852-4FA1-BE42-3B0DB3436127" referredColumn="5A10B346-F7AB-72C0-6265-363788D93992"/>
+</associations>
+</Column>
+<Column name="COD_LISTA" id="7E5462BC-4BDC-CA69-3BA7-96C16EA72EEB">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>LISTE_DEF</sourceObjSchema>
+<sourceObjName>COD_LISTA</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:09:56 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEN_LISTA" id="86972D41-A96B-B68E-BA91-34A557FC2470">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>LISTE_DEF</sourceObjSchema>
+<sourceObjName>DEN_LISTA</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:09:56 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ORDER_NO" id="AFA875B6-7539-93AD-5369-0690FB126DB8">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>LISTE_DEF</sourceObjSchema>
+<sourceObjName>ORDER_NO</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:09:56 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="70801369-DCF4-15D4-632D-CA4B1743BED7" name="PK_LISTE_DEF">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>DOLPHIN</sourceObjSchema>
+<sourceObjName>PK_LISTE_DEF</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:09:56 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B1A851E2-3A15-9261-75F6-F9F6DD1680FB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F124DC9B-F77F-F135-096E-E0B85C40DE55" name="UK_LISTE_DEF">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>DOLPHIN</sourceObjSchema>
+<sourceObjName>UK_LISTE_DEF</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:09:56 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DE08A3A9-52D6-1044-C945-E48C76DF6095"/>
+<colUsage columnID="7E5462BC-4BDC-CA69-3BA7-96C16EA72EEB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="23813CA6-2D3B-C2DD-DA22-616F4B6A43C3" schemaObject="7AADC8E5-0B95-5DBE-40E6-F5482C817A75" name="PK_LISTE_DEF">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>DOLPHIN</sourceObjSchema>
+<sourceObjName>PK_LISTE_DEF</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:09:56 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B1A851E2-3A15-9261-75F6-F9F6DD1680FB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D3A4D9EC-7242-6971-C201-F57723D8ACEB" schemaObject="7AADC8E5-0B95-5DBE-40E6-F5482C817A75" name="UK_LISTE_DEF">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>DOLPHIN</sourceObjSchema>
+<sourceObjName>UK_LISTE_DEF</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:09:56 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DE08A3A9-52D6-1044-C945-E48C76DF6095"/>
+<colUsage columnID="7E5462BC-4BDC-CA69-3BA7-96C16EA72EEB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FABE9997-8A69-8474-06EE-180F99ADD757" name="FK_LISTE_DEF">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:09:57 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DE08A3A9-52D6-1044-C945-E48C76DF6095"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="TICHETE_LOG" directorySegmentName="seg_0" id="58421EEC-6ED8-3B6C-EA1E-1E071E1FD0A1">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:34 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<schemaObject>7AADC8E5-0B95-5DBE-40E6-F5482C817A75</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>C36EC170-BB53-AD17-AE86-695AD98B16B3</segment>
+<tableSpace>C112C3A7-6A55-4120-1670-1BCD1D1952CB</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID_TICHET" id="051A9A49-C490-D91D-4E25-BB867A693684">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:34 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="OVERTIME" id="33DB30FD-2308-AFB8-2E95-DC8D7E0E21B0">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:34 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_STARE" id="5CEFC584-DD95-1FE1-88A3-2B744265C91F">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:34 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DATA_START" id="6C0A9040-5853-4799-CCD8-0A9E3180C6C3">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:34 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DESCRIERE" id="B0CCA4C2-37AA-EFD6-3402-E97A7BAD431C">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:34 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_TICHET_LOG" id="CEFA444E-A050-B716-DFC4-8CDFD5D8BC44">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:34 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_TIP_OPER" id="D283CE31-1D03-31A2-4BB4-F988E6A3C719">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:34 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DATA_END" id="DA4A7B6C-BE6E-4A43-4442-8C873C3BA5C4">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:34 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_UTILIZ" id="EBB6BA28-9EE2-60A8-66FD-A27027EBF223">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:34 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_TICHETE_LOG" id="D4BDEC71-D27B-E751-AE73-DFFEC85A9070">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:34 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<schemaObject>7AADC8E5-0B95-5DBE-40E6-F5482C817A75</schemaObject>
+<segment>BE69CEBE-4898-CC97-E7B9-F430ED8E8F1B</segment>
+<tableSpace>C112C3A7-6A55-4120-1670-1BCD1D1952CB</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_TICHETE_LOG_TICHET" id="20785FB9-8500-E4C3-5199-7A1B1ECCF8FB">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:34 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_TICHETE_DET_STARE" id="AD3B7057-4E5E-41CD-289F-AD35F3DA2C7A">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:34 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_TICHETE_DET_TIPOPER" id="ECAAC546-C994-DF02-D355-FD5CA4D73012">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:34 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_TICHETE_LOG_UTILIZ" id="F69838F4-ED57-D95B-54FC-6C53AC56BEDF">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:34 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_TICHETE_LOG" id="70C673EA-BE99-7AEB-E99E-2159F409686E">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:34 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<segment>BE69CEBE-4898-CC97-E7B9-F430ED8E8F1B</segment>
+<tableSpace>C112C3A7-6A55-4120-1670-1BCD1D1952CB</tableSpace>
+<existingIndex>D4BDEC71-D27B-E751-AE73-DFFEC85A9070</existingIndex>
+<indexSegment>BE69CEBE-4898-CC97-E7B9-F430ED8E8F1B</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

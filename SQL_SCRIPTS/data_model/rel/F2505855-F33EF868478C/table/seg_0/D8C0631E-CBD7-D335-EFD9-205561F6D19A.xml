@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D8C0631E-CBD7-D335-EFD9-205561F6D19A" schemaObject="7AADC8E5-0B95-5DBE-40E6-F5482C817A75" name="CHANGEURI_DET">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>DOLPHIN</sourceObjSchema>
+<sourceObjName>CHANGEURI_DET</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:34:31 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_CHANGE_DET" id="D5D3089E-0DAA-35D5-BB3B-D0D2F90DC54E">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>CHANGEURI_DET</sourceObjSchema>
+<sourceObjName>ID_CHANGE_DET</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:34:31 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_CHANGE" id="AB0D6B92-0899-0F0F-42F3-B7D5455D48B9">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>CHANGEURI_DET</sourceObjSchema>
+<sourceObjName>ID_CHANGE</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:34:31 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C42E1351-2E43-B6B5-BFAA-DACA3F9DAFA2" referredColumn="FEDFB3D8-800F-3238-4ABB-2900AA3EA6FE"/>
+</associations>
+</Column>
+<Column name="ID_UTILIZ" id="8D98E396-4419-9C7E-7E43-6C0430E68B00">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>CHANGEURI_DET</sourceObjSchema>
+<sourceObjName>ID_UTILIZ</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:34:31 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OVERTIME" id="91451826-33AC-B9AA-9F60-FB62D3E89D4C">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>CHANGEURI_DET</sourceObjSchema>
+<sourceObjName>OVERTIME</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:34:31 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="56721CBE-4F6E-56E8-F650-97606CF0F00E" name="FK_CHANGEURI_DET">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:34:31 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AB0D6B92-0899-0F0F-42F3-B7D5455D48B9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

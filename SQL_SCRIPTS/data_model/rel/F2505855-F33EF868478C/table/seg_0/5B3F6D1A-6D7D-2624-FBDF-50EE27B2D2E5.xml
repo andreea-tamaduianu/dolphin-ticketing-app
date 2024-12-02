@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5B3F6D1A-6D7D-2624-FBDF-50EE27B2D2E5" schemaObject="7AADC8E5-0B95-5DBE-40E6-F5482C817A75" name="LISTE">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>DOLPHIN</sourceObjSchema>
+<sourceObjName>LISTE</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:09:49 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_LISTA" id="5A10B346-F7AB-72C0-6265-363788D93992">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>LISTE</sourceObjSchema>
+<sourceObjName>ID_LISTA</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:09:49 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIP_LISTA" id="30CCFBF5-6AF4-3818-F536-01F5E084E29F">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>LISTE</sourceObjSchema>
+<sourceObjName>TIP_LISTA</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:09:49 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEN_TIP_LISTA" id="EAEEFE9D-9F2D-4B01-5240-5321162017E7">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>LISTE</sourceObjSchema>
+<sourceObjName>DEN_TIP_LISTA</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:09:49 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="27EB37A1-C80B-0C34-D235-C9BBDC4CF7E9" name="PK_LISTE">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>DOLPHIN</sourceObjSchema>
+<sourceObjName>PK_LISTE</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:09:50 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5A10B346-F7AB-72C0-6265-363788D93992"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="98120059-D6B4-58A1-8CB6-1163535BBE1D" schemaObject="7AADC8E5-0B95-5DBE-40E6-F5482C817A75" name="PK_LISTE">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>DOLPHIN</sourceObjSchema>
+<sourceObjName>PK_LISTE</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:09:50 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5A10B346-F7AB-72C0-6265-363788D93992"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

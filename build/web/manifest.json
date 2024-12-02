@@ -1,0 +1,215 @@
+{
+	"_version": "1.12.0",
+	"sap.app": {
+		"id": "sap.ui.dolphin",
+		"type": "application"
+	},
+	"sap.ui5": {
+		"dependencies": {
+			"minUI5Version": "1.75.0",
+			"libs": {
+				"sap.ui.core": {},
+				"sap.m": {},
+				"sap.f": {},
+				"sap.ui.unified": {}
+			}
+		},
+                "models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "sap.ui.demo.todo.i18n.i18n",
+					"supportedLocales": ["en", "ro"],
+					"fallbackLocale": "ro"
+				}
+			},
+			"": {
+				"type": "sap.ui.model.json.JSONModel",
+				"uri": "model/todoitems.json"
+			}
+		},
+
+		"rootView": {
+			"viewName": "sap.ui.dolphin.view.App",
+			"type": "XML",
+			"async": true,
+			"id": "app"
+		},
+		
+                 "routing": {
+            "config": {
+                "routerClass": "sap.m.routing.Router",
+                "viewType": "XML",
+                "viewPath": "sap.ui.dolphin.view",
+                "controlId": "mainContents",
+                "controlAggregation": "pages",
+                "transition": "slide",
+                "async": true,
+                "bypassed": {
+                    "target": "mainPage"
+                }
+            },
+            "routes": [
+                {
+                    "pattern": "",
+                    "name": "mainPage",
+                    "target": "mainPage"
+                },
+                {
+                    "pattern": "mainPage",
+                    "name": "mainPage",
+                    "target": "mainPage"
+                },
+                
+                {
+                    "pattern": "tichete",
+                    "name": "tichete",
+                    "target": "tichete"
+                },
+                
+                 {
+                    "pattern": "utilizatori",
+                    "name": "utilizatori",
+                    "target": "utilizatori"
+                },
+                
+                {
+                    "pattern": "ticheteDeschise",
+                    "name": "ticheteDeschise",
+                    "target": "ticheteDeschise"
+                },
+                
+                {
+                    "pattern": "ticheteInLucru",
+                    "name": "ticheteInLucru",
+                    "target": "ticheteInLucru"
+                },
+                
+                {
+                    "pattern": "ticheteRezolvate",
+                    "name": "ticheteRezolvate",
+                    "target": "ticheteRezolvate"
+                },
+                
+                {
+                    "pattern": "ticheteInchise",
+                    "name": "ticheteInchise",
+                    "target": "ticheteInchise"
+                },
+                
+                {
+                    "pattern": "utilizatori",
+                    "name": "utilizatori",
+                    "target": "utilizatori"
+                },
+                
+                {
+                    "pattern": "echipe",
+                    "name": "echipe",
+                    "target": "echipe"
+                },
+                
+                {
+                    "pattern": "valoriListe",
+                    "name": "valoriListe",
+                    "target": "valoriListe"
+                },
+                
+                {
+                    "pattern": "produseDisponibile",
+                    "name": "produseDisponibile",
+                    "target": "produseDisponibile"
+                },
+                {
+                    "pattern": "asigurarileMele",
+                    "name": "asigurarileMele",
+                    "target": "asigurarileMele"
+                },
+                {
+                    "pattern": "chestionar",
+                    "name": "chestionar",
+                    "target": "chestionar"
+                },
+                {
+                    "pattern": "login",
+                    "name": "login",
+                    "target": "login"
+                }
+            ],
+            "targets": {
+                "mainPage": {
+                    "viewName": "MainPage",
+                    "viewLevel": 0
+                },
+                "login": {
+                    "viewName": "Login",
+                    "viewLevel": 1
+                },
+                
+                "tichete": {
+                    "viewName": "TichetePage",
+                    "viewLevel": 0
+                },
+                
+                "utilizatori": {
+                    "viewName": "UtilizatoriPage",
+                    "viewLevel": 0
+                },
+                
+                
+                "ticheteDeschise": {
+                    "viewName": "TicheteDeschisePage",
+                    "viewLevel": 0
+                },
+                
+                "ticheteInLucru" : {
+                    "viewName": "TicheteInLucruPage",
+                    "viewLevel": 0
+                },
+                
+                "ticheteRezolvate": {
+                    "viewName": "TicheteRezolvatePage",
+                    "viewLevel": 0
+                },
+                "utilizatori": {
+                    "viewName": "UtilizatoriPage",
+                    "viewLevel": 0
+                },
+                "echipe": {
+                    "viewName": "EchipePage",
+                    "viewLevel": 0
+                },
+                
+                "ticheteInchise" : {
+                    "viewName": "TicheteInchisePage",
+                    "viewLevel": 0
+                },
+                
+                "valoriListe":{
+                    "viewName": "ValoriListePage",
+                    "viewLevel": 0
+                },
+                
+                "produseDisponibile": {
+                    "viewName": "ProduseDisponibile",
+                    "viewLevel": 1
+                },
+                "asigurarileMele": {
+                    "viewName": "AsigurarileMele",
+                    "viewLevel": 1
+                },
+                "chestionar": {
+                    "viewName": "Chestionar",
+                    "viewLevel": 1
+                }
+            }
+        },
+		"resources": {
+			"css": [
+				{
+					"uri": "css/styles.css"
+				}
+			]
+		}
+	}
+}

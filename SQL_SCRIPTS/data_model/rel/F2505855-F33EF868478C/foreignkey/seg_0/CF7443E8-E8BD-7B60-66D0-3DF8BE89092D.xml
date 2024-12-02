@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="CF7443E8-E8BD-7B60-66D0-3DF8BE89092D" containerWithKeyObject="94C5D266-7AC1-7E92-9448-E79EA01CF33A" localFKIndex="C099713E-0585-AD65-9D82-045A92BFBCEB" name="FK_TICHETE_DET_TICHET">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>DOLPHIN</sourceObjSchema>
+<sourceObjName>FK_TICHETE_DET_TICHET</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:17 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<referredTableLongName>DOLPHIN.TICHETE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C818CDF8-81B6-B7FC-60B1-5A6BF60D4A06</referredTableID>
+<keyObject>CC5066CE-658F-B448-F59A-A9BB68B8F276</keyObject>
+<referredKeyID>CC5066CE-658F-B448-F59A-A9BB68B8F276</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_TICHET</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

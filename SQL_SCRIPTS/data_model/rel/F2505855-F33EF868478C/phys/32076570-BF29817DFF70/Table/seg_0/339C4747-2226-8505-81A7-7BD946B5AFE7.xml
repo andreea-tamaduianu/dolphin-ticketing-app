@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="LISTE_DEF" directorySegmentName="seg_0" id="339C4747-2226-8505-81A7-7BD946B5AFE7">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:09:56 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<schemaObject>7AADC8E5-0B95-5DBE-40E6-F5482C817A75</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>37B77190-531E-968D-C748-C4F9BE80E8EC</segment>
+<tableSpace>C112C3A7-6A55-4120-1670-1BCD1D1952CB</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="COD_LISTA" id="7E5462BC-4BDC-CA69-3BA7-96C16EA72EEB">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:09:56 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DEN_LISTA" id="86972D41-A96B-B68E-BA91-34A557FC2470">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:09:56 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ORDER_NO" id="AFA875B6-7539-93AD-5369-0690FB126DB8">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:09:56 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_LISTA_DEF" id="B1A851E2-3A15-9261-75F6-F9F6DD1680FB">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:09:56 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_LISTA" id="DE08A3A9-52D6-1044-C945-E48C76DF6095">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:09:56 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_LISTE_DEF" id="23813CA6-2D3B-C2DD-DA22-616F4B6A43C3">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:09:56 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<schemaObject>7AADC8E5-0B95-5DBE-40E6-F5482C817A75</schemaObject>
+<segment>B3A4C54F-4DA4-7BB0-DA8B-A17E52D75CD6</segment>
+<tableSpace>C112C3A7-6A55-4120-1670-1BCD1D1952CB</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="UK_LISTE_DEF" id="D3A4D9EC-7242-6971-C201-F57723D8ACEB">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:09:56 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<schemaObject>7AADC8E5-0B95-5DBE-40E6-F5482C817A75</schemaObject>
+<segment>B3A4C54F-4DA4-7BB0-DA8B-A17E52D75CD6</segment>
+<tableSpace>C112C3A7-6A55-4120-1670-1BCD1D1952CB</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_LISTE_DEF" id="FABE9997-8A69-8474-06EE-180F99ADD757">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:09:57 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_LISTE_DEF" id="70801369-DCF4-15D4-632D-CA4B1743BED7">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:09:56 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<segment>B3A4C54F-4DA4-7BB0-DA8B-A17E52D75CD6</segment>
+<tableSpace>C112C3A7-6A55-4120-1670-1BCD1D1952CB</tableSpace>
+<existingIndex>23813CA6-2D3B-C2DD-DA22-616F4B6A43C3</existingIndex>
+<indexSegment>B3A4C54F-4DA4-7BB0-DA8B-A17E52D75CD6</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="UK_LISTE_DEF" id="F124DC9B-F77F-F135-096E-E0B85C40DE55">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:09:56 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<segment>B3A4C54F-4DA4-7BB0-DA8B-A17E52D75CD6</segment>
+<tableSpace>C112C3A7-6A55-4120-1670-1BCD1D1952CB</tableSpace>
+<existingIndex>D3A4D9EC-7242-6971-C201-F57723D8ACEB</existingIndex>
+<indexSegment>B3A4C54F-4DA4-7BB0-DA8B-A17E52D75CD6</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

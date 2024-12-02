@@ -1,0 +1,229 @@
+<mvc:View height="100%" 
+          controllerName="sap.ui.dolphin.controller.AdaugaUtilizator"
+          xmlns:mvc="sap.ui.core.mvc"
+          xmlns:l="sap.ui.layout"
+          xmlns:f="sap.ui.layout.form"
+          xmlns:core="sap.ui.core"
+          xmlns="sap.m">
+    
+    	<l:Splitter height="auto" orientation="Vertical">
+           
+            <ScrollContainer
+		height="90%"
+		width="99%"
+		vertical="true"
+		focusable="true" >
+
+                <layoutData>
+                    <l:SplitterLayoutData size="auto" />
+                </layoutData>
+                
+                <Table id="idListaUtilizatori"
+                    items="{utilizatormodel>/listaUtilizatori}"
+                    alternateRowColors="true" >
+
+
+                    <headerToolbar>
+                            <OverflowToolbar>
+                                    <Title text="Utilizatori" level="H2"/>
+
+                                    <ToolbarSpacer/>
+                                    <Button
+                                            tooltip="View Sort Settings"
+                                            icon="sap-icon://sort"
+                                            press="handleSortButtonPressed" />
+                                    <Button
+                                            tooltip="View Filter Settings"
+                                            icon="sap-icon://filter"
+                                            press="handleFilterButtonPressed" />
+
+                                    <Button
+                                            icon="sap-icon://add-employee"
+                                            text="Adauga Utilizator"
+                                            press="adaugaUtilizator" />
+
+                            </OverflowToolbar>
+                    </headerToolbar>
+
+                    <infoToolbar>
+                            <OverflowToolbar id="vsdFilterBar" visible="false">
+                                    <Text id="vsdFilterLabel" />
+                            </OverflowToolbar>
+                    </infoToolbar>
+
+                    <columns>
+
+                            <Column width="12em">
+                                <Text text="Cod Utilizator" />
+                            </Column>
+
+                            <Column minScreenWidth="Tablet" demandPopin="true"  width="12em"> 
+                                <Text text="Nume" />
+                            </Column>
+
+                            <Column minScreenWidth="Tablet" demandPopin="true"  width="12em"> 
+                                <Text text="Prenume" />
+                            </Column>
+
+                            <Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center"  width="12em"> 
+                                <Text text="Rol" />
+                            </Column>
+
+                            <Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center" width="12em"> 
+                                <Text text="Echipa" />
+                            </Column>
+
+                            <Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center" width="12em"> 
+                                <Text text="Stare" />
+                            </Column>                                        
+
+                            <Column minScreenWidth="Tablet" demandPopin="true" > 
+                                <Text text="Email" /> 
+                            </Column> 
+
+
+                    </columns>
+
+                    <items>
+                            <ColumnListItem
+                                type="Active"
+                                press="onPress">
+                                    <cells>
+
+                                            <Text text="{utilizatormodel>cod_utiliz}" />
+                                            <Text text="{utilizatormodel>nume_utiliz}" />
+                                            <Text text="{utilizatormodel>prenume_utiliz}" />
+
+                                            <Text text="{utilizatormodel>den_rol_utiliz}" />
+                                            <Text text="{utilizatormodel>den_echipa}" />
+                                            <Text text="{utilizatormodel>den_stare}" />
+                                            <Text text="{utilizatormodel>email}" />
+
+                                    </cells>
+                            </ColumnListItem>
+                    </items>
+            </Table>
+        </ScrollContainer>
+
+           
+        <ScrollContainer
+		height="800px"
+		width="99%"
+		vertical="true"
+		focusable="true" >
+
+                <layoutData>
+                    <l:SplitterLayoutData size="auto" />
+                </layoutData>
+                
+<!--            <Panel class="sapUiResponsiveMargin" width="auto">
+
+             <content>
+
+                 <Label text="Id utilizator:" class="sapUiSmallMargin"/>
+                 <Input id="input_id_utiliz" value="{utilizatormodel>/id_utiliz}"  width="110px" type="Text" enabled="false" />
+
+             </content>
+           </Panel>-->
+
+           <Panel headerText="" class="sapUiResponsiveMargin" width="auto">
+             <content>
+
+                 <Label text="Nume:" width="80px" class="sapUiSmallMargin"/>
+                 <Input id="input_nume_utiliz" value="{utilizatormodel>/nume_utiliz}"  width="180px" type="Text" enabled="{utilizatormodel>/addop}" />
+
+                 <Label text="Prenume:" class="sapUiSmallMargin"/>                            
+                 <Input id="input_prenume_utiliz" value="{utilizatormodel>/prenume_utiliz}" width="180px" type="Text"  enabled="{utilizatormodel>/addop}"  />
+                 
+                 <Label text="Email:" class="sapUiSmallMargin"/>                            
+                 <Input id="input_email" value="{utilizatormodel>/email}" width="220px" type="Text"  enabled="{utilizatormodel>/addop}"  />
+
+             </content>
+           </Panel>
+
+           <Panel headerText="" class="sapUiResponsiveMargin" width="auto">
+             <content>
+
+                 <Label text="Username:" width="80px" class="sapUiSmallMargin"/>
+                 <Input id="input_cod_utiliz" value="{utilizatormodel>/cod_utiliz}"  width="110px" type="Text" enabled="{utilizatormodel>/addop}" />
+
+                 <Label text="Parola:" class="sapUiSmallMargin"/>                            
+                 <Input id="input_parola" value="{utilizatormodel>/parola}" width="350px" type="Text"  enabled="{utilizatormodel>/addop}"  />
+
+             </content>
+           </Panel>
+
+            <Panel headerText="" class="sapUiResponsiveMargin" width="auto">  
+             <content>
+                 <Label text="Echipa:" width="80px" class="sapUiSmallMargin"/>                            
+                       
+<!--                 <Select id="select_echipa" 
+                         selectedKey="{utilizatormodel>/echipa}"
+                         width="200px"  
+                         enabled="{utilizatormodel>/addop}" >
+                     <items>
+                         <core:Item text="-" key="-"/>
+                         <core:Item text="DBA" key="DBA"/>
+                         <core:Item text="SysAdmin" key="SYSADMIN"/>
+                         <core:Item text="Applicatie" key="APP"/>
+                     </items>                     
+                 </Select>-->
+                 <Select id="select_echipa" selectedKey="{utilizatormodel>/echipa}" width="200px"  enabled="{utilizatormodel>/addop}"  
+                          items="{path: 'utilizatormodel>/echipe',
+                                  sorter: { path: 'order_no' }
+                                 }">                       
+                   <core:Item key="{utilizatormodel>cod_lista}" text="{utilizatormodel>den_lista}" />
+                 </Select>
+
+                 <Label text="Rol:" class="sapUiSmallMargin"/>                            
+                 
+                 <Select id="select_rol" selectedKey="{utilizatormodel>/rol}" width="200px"  enabled="{utilizatormodel>/addop}"  
+                          items="{path: 'utilizatormodel>/roluri',
+                                  sorter: { path: 'order_no' }
+                                 }">                       
+                        <core:Item key="{utilizatormodel>cod_lista}" text="{utilizatormodel>den_lista}" />
+                                
+<!--                     <items>
+                         <core:Item text="-" key="-"/>
+                         <core:Item text="Administrator" key="ADMIN"/>
+                         <core:Item text="Level 1" key="L1"/>
+                         <core:Item text="Level 2" key="L2"/>
+                     </items>-->
+                     
+                 </Select>
+
+               <Label text="Stare:" class="sapUiSmallMargin"/>
+               <Select id="select_stare" selectedKey="{utilizatormodel>/stare}" width="110px"  enabled="{utilizatormodel>/addop}"  
+                          items="{path: 'utilizatormodel>/stari',
+                                  sorter: { path: 'order_no' }
+                                 }">                       
+                   <core:Item key="{utilizatormodel>cod_lista}" text="{utilizatormodel>den_lista}" />
+               </Select>
+               
+<!--               <Input id="input_stare" value="{utilizatormodel>/stare}"  width="110px" type="Text" enabled="{utilizatormodel>/addop}" />-->
+
+
+             </content>   
+           </Panel>
+
+           <Panel headerText="" class="sapUiResponsiveMargin" width="auto">
+
+             <content>
+                 <Button text="Salvare" press="clickButtonSalvare"  icon="sap-icon://save" ariaDescribedBy="defaultButtonDescription genericButtonDescription"  enabled="{utilizatormodel>/addop}"  ></Button>
+                 <Label text=" " class="sapUiSmallMargin" />
+                 <Button text="Anulare" press="clickButtonAnulare"  icon="sap-icon://decline" ariaDescribedBy="defaultButtonDescription genericButtonDescription"  enabled="{utilizatormodel>/addop}"  ></Button>
+                 
+                 <Label text=" {utilizatormodel>/afisare_mesaj}" class="sapUiSmallMargin"/> 
+
+             </content>
+
+         </Panel>
+
+        </ScrollContainer> 
+		
+                
+	</l:Splitter>
+  
+         
+
+</mvc:View>

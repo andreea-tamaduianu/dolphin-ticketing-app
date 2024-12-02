@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="UTILIZATORI" directorySegmentName="seg_0" id="FB569DBC-F0DD-C279-7AD4-BAAB98E583FC">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:40 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<schemaObject>7AADC8E5-0B95-5DBE-40E6-F5482C817A75</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>37B77190-531E-968D-C748-C4F9BE80E8EC</segment>
+<tableSpace>C112C3A7-6A55-4120-1670-1BCD1D1952CB</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="PRENUME_UTILIZ" id="13D76CFA-95A1-BF90-BEBB-807BEFC8F261">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:40 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PAROLA" id="57CF7FAD-3C5C-9D95-A761-5A0FE6AE822C">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:40 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_UTILIZ" id="7460004E-7ABF-A811-DEE4-15F6F872FA81">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:40 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_ROL_UTILIZ" id="7C86CCB7-B422-F067-41D7-B1B77332835F">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:40 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_ECHIPA" id="7D483111-FEB5-5B20-A490-0F6FFE792627">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:40 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EMAIL" id="9CD96BB5-92A4-01CF-A014-96788FBAA898">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:40 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NUME_UTILIZ" id="C7CD8378-5170-E126-CC03-996D94C9F73F">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:40 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_STARE" id="E722328D-644D-E04D-9716-826B50BA75A0">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:40 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COD_UTILIZ" id="F6C91F1A-05FF-D777-A097-792B539D2466">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:40 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_UTILIZATORI" id="19DE6731-C941-D77E-5DB1-D819C427F5C6">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:40 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<schemaObject>7AADC8E5-0B95-5DBE-40E6-F5482C817A75</schemaObject>
+<segment>B3A4C54F-4DA4-7BB0-DA8B-A17E52D75CD6</segment>
+<tableSpace>C112C3A7-6A55-4120-1670-1BCD1D1952CB</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="UK_UTILIZATORI" id="2A7D13C2-E2D2-808B-858C-07AEF69F2D65">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:40 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<schemaObject>7AADC8E5-0B95-5DBE-40E6-F5482C817A75</schemaObject>
+<segment>B3A4C54F-4DA4-7BB0-DA8B-A17E52D75CD6</segment>
+<tableSpace>C112C3A7-6A55-4120-1670-1BCD1D1952CB</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_UTILIZATORI" id="67D83454-676E-AD1D-3D22-0477437540AD">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:40 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<segment>B3A4C54F-4DA4-7BB0-DA8B-A17E52D75CD6</segment>
+<tableSpace>C112C3A7-6A55-4120-1670-1BCD1D1952CB</tableSpace>
+<existingIndex>19DE6731-C941-D77E-5DB1-D819C427F5C6</existingIndex>
+<indexSegment>B3A4C54F-4DA4-7BB0-DA8B-A17E52D75CD6</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="UK_UTILIZATORI" id="221E3B6B-50F1-D8AF-18F4-8A7235521615">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:40 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<segment>B3A4C54F-4DA4-7BB0-DA8B-A17E52D75CD6</segment>
+<tableSpace>C112C3A7-6A55-4120-1670-1BCD1D1952CB</tableSpace>
+<existingIndex>2A7D13C2-E2D2-808B-858C-07AEF69F2D65</existingIndex>
+<indexSegment>B3A4C54F-4DA4-7BB0-DA8B-A17E52D75CD6</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

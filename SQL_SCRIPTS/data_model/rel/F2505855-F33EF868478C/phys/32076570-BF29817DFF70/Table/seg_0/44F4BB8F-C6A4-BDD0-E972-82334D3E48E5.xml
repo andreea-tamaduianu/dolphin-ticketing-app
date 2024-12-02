@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="CHANGEURI" directorySegmentName="seg_0" id="44F4BB8F-C6A4-BDD0-E972-82334D3E48E5">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:31:10 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<schemaObject>7AADC8E5-0B95-5DBE-40E6-F5482C817A75</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>C36EC170-BB53-AD17-AE86-695AD98B16B3</segment>
+<tableSpace>C112C3A7-6A55-4120-1670-1BCD1D1952CB</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID_STARE_CHANGE" id="35D73EAA-0869-256E-126B-F0D04134F7C7">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:31:10 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DESCRIERE" id="35E311AA-1623-E033-E897-FAF0B6255158">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:31:10 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DATA_END" id="D79BFE88-2AF3-2BD5-2A01-24F9E03EF74B">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:31:10 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DATA_START" id="E76D718D-8E93-2CB5-396E-B59C24559707">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:31:10 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COMENTARII" id="F83C15BB-8224-227A-E573-B53E924E2ED9">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:31:10 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_CHANGE" id="FEDFB3D8-800F-3238-4ABB-2900AA3EA6FE">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:31:10 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_CHANGEURI" id="B6411C08-92A1-C14A-EA2E-212515EA8DBD">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:31:10 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<schemaObject>7AADC8E5-0B95-5DBE-40E6-F5482C817A75</schemaObject>
+<segment>BE69CEBE-4898-CC97-E7B9-F430ED8E8F1B</segment>
+<tableSpace>C112C3A7-6A55-4120-1670-1BCD1D1952CB</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_CHANGEURI_STARE" id="914B38D2-9D6D-111D-E04A-FC4959DB7202">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:31:10 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_CHANGEURI" id="C8B1BD7B-3269-301F-F181-B727C85C4804">
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:31:10 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<segment>BE69CEBE-4898-CC97-E7B9-F430ED8E8F1B</segment>
+<tableSpace>C112C3A7-6A55-4120-1670-1BCD1D1952CB</tableSpace>
+<existingIndex>B6411C08-92A1-C14A-EA2E-212515EA8DBD</existingIndex>
+<indexSegment>BE69CEBE-4898-CC97-E7B9-F430ED8E8F1B</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

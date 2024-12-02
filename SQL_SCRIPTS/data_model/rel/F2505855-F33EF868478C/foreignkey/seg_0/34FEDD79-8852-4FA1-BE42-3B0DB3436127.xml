@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="34FEDD79-8852-4FA1-BE42-3B0DB3436127" containerWithKeyObject="339C4747-2226-8505-81A7-7BD946B5AFE7" localFKIndex="FABE9997-8A69-8474-06EE-180F99ADD757" name="FK_LISTE_DEF">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>DOLPHIN</sourceObjSchema>
+<sourceObjName>FK_LISTE_DEF</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:09:56 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<referredTableLongName>DOLPHIN.LISTE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>5B3F6D1A-6D7D-2624-FBDF-50EE27B2D2E5</referredTableID>
+<keyObject>98120059-D6B4-58A1-8CB6-1163535BBE1D</keyObject>
+<referredKeyID>98120059-D6B4-58A1-8CB6-1163535BBE1D</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_LISTA</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

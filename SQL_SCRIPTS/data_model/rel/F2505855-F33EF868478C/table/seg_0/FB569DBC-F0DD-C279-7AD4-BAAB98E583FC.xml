@@ -1,0 +1,200 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FB569DBC-F0DD-C279-7AD4-BAAB98E583FC" schemaObject="7AADC8E5-0B95-5DBE-40E6-F5482C817A75" name="UTILIZATORI">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>DOLPHIN</sourceObjSchema>
+<sourceObjName>UTILIZATORI</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:40 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_UTILIZ" id="7460004E-7ABF-A811-DEE4-15F6F872FA81">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>UTILIZATORI</sourceObjSchema>
+<sourceObjName>ID_UTILIZ</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:40 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_UTILIZ" id="F6C91F1A-05FF-D777-A097-792B539D2466">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>UTILIZATORI</sourceObjSchema>
+<sourceObjName>COD_UTILIZ</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:40 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUME_UTILIZ" id="C7CD8378-5170-E126-CC03-996D94C9F73F">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>UTILIZATORI</sourceObjSchema>
+<sourceObjName>NUME_UTILIZ</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:40 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_ROL_UTILIZ" id="7C86CCB7-B422-F067-41D7-B1B77332835F">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>UTILIZATORI</sourceObjSchema>
+<sourceObjName>ID_ROL_UTILIZ</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:40 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PAROLA" id="57CF7FAD-3C5C-9D95-A761-5A0FE6AE822C">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>UTILIZATORI</sourceObjSchema>
+<sourceObjName>PAROLA</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:40 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_STARE" id="E722328D-644D-E04D-9716-826B50BA75A0">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>UTILIZATORI</sourceObjSchema>
+<sourceObjName>ID_STARE</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:40 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRENUME_UTILIZ" id="13D76CFA-95A1-BF90-BEBB-807BEFC8F261">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>UTILIZATORI</sourceObjSchema>
+<sourceObjName>PRENUME_UTILIZ</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:40 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_ECHIPA" id="7D483111-FEB5-5B20-A490-0F6FFE792627">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>UTILIZATORI</sourceObjSchema>
+<sourceObjName>ID_ECHIPA</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:40 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMAIL" id="9CD96BB5-92A4-01CF-A014-96788FBAA898">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>UTILIZATORI</sourceObjSchema>
+<sourceObjName>EMAIL</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:40 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="67D83454-676E-AD1D-3D22-0477437540AD" name="PK_UTILIZATORI">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>DOLPHIN</sourceObjSchema>
+<sourceObjName>PK_UTILIZATORI</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:40 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7460004E-7ABF-A811-DEE4-15F6F872FA81"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="221E3B6B-50F1-D8AF-18F4-8A7235521615" name="UK_UTILIZATORI">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>DOLPHIN</sourceObjSchema>
+<sourceObjName>UK_UTILIZATORI</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:40 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F6C91F1A-05FF-D777-A097-792B539D2466"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="19DE6731-C941-D77E-5DB1-D819C427F5C6" schemaObject="7AADC8E5-0B95-5DBE-40E6-F5482C817A75" name="PK_UTILIZATORI">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>DOLPHIN</sourceObjSchema>
+<sourceObjName>PK_UTILIZATORI</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:40 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7460004E-7ABF-A811-DEE4-15F6F872FA81"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2A7D13C2-E2D2-808B-858C-07AEF69F2D65" schemaObject="7AADC8E5-0B95-5DBE-40E6-F5482C817A75" name="UK_UTILIZATORI">
+<sourceConnName>cnn_dolphin</sourceConnName>
+<sourceObjSchema>DOLPHIN</sourceObjSchema>
+<sourceObjName>UK_UTILIZATORI</sourceObjName>
+<createdBy>Ana</createdBy>
+<createdTime>2020-06-20 17:10:40 UTC</createdTime>
+<ownerDesignName>data_model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F6C91F1A-05FF-D777-A097-792B539D2466"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

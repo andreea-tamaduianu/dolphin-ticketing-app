@@ -1,0 +1,157 @@
+<mvc:View 
+    xmlns:mvc="sap.ui.core.mvc" 
+    xmlns:core="sap.ui.core" 
+    xmlns="sap.m" 
+    xmlns:f="sap.f" 
+    xmlns:tnt="sap.tnt" 
+    controllerName="sap.ui.dolphin.controller.App" displayBlock="true">
+
+ 
+    <tnt:ToolPage id="app1" class="tmsStyle"  visible="{= ${mainmodel>/IDUser}===null }" >
+      
+        <tnt:mainContents>
+            <!--
+            <f:SimpleForm id="smplform" editable="true"
+                        layout="ResponsiveGridLayout" 
+                        labelSpanXL="3" labelSpanL="3" labelSpanM="12" labelSpanS="12"
+                        adjustLabelSpan="false"
+                        emptySpanXL="0" emptySpanL="0" emptySpanM="0" emptySpanS="0"
+                        columnsXL="2" columnsL="2" columnsM="2" >
+                <f:content>
+                 
+                    <Label text="Autentificare" />     
+                    <br/>               
+                    <Label text="Utilizator" />
+                    <Input id="input_username" value="{mainmodel>/Username}"  type="Text" />
+                    <Label text="Parola" />
+                    <Input id="input_parola" value="{mainmodel>/Password}" type="Password" />
+                    <Button text="Logare" press="clickButtonLogare" ariaDescribedBy="defaultButtonDescription genericButtonDescription"  ></Button>
+                     -->  
+                    <!--<App id="mmainContents" />-->
+                    
+                    <Panel headerText="{i18n>Autentificare}" class="sapUiResponsiveMargin" width="auto">
+                        <content>
+                            <Label text="{i18n>Utilizator}" class="sapUiSmallMargin"/>
+                            
+                            <Input id="input_username" value="{mainmodel>/Username}"  width="200px" type="Text" />
+                            <Label text="Parola" class="sapUiSmallMargin"/>                            
+                            <Input id="input_parola" value="{mainmodel>/Password}" width="200px" type="Password" />
+                            <Label text="  " class="sapUiSmallMargin"/>    
+                            <Button text="Logare" icon="sap-icon://visits" press="clickButtonLogare" ariaDescribedBy="defaultButtonDescription genericButtonDescription"  ></Button>
+                        </content>
+                        
+                    </Panel>
+        
+            <!--        
+                </f:content>		
+                 width="200px" 
+                 
+            </f:SimpleForm>
+            -->
+        </tnt:mainContents>
+    </tnt:ToolPage>
+
+    <tnt:ToolPage id="app" class="tmsStyle"  visible="{= ${mainmodel>/IDUser}!==null }" >
+        <tnt:header>
+            <tnt:ToolHeader>
+                <!-- unde este metoda onSideNavButtonPress care se apeleaza pe butonul de meniu ? -->
+                <Button id="sideNavigationToggleButton" icon="sap-icon://menu2" type="Transparent" press="onSideNavButtonPress" visible="{editingState>/allnoop}">
+                    <layoutData>
+                        <OverflowToolbarLayoutData priority="NeverOverflow"/>
+                    </layoutData>
+                </Button>
+        
+                <Avatar src="./img/ro.png" displaySize="Custom" customDisplaySize="1.5rem" press="changeLanguage">
+                    <!-- Ce este tagul  customData - unde este proprietatea lang in care pune codul de limba ? -->
+                    <customData>
+                        <core:CustomData key="lang" value="ro" />
+                    </customData>
+                </Avatar>
+                
+                
+                <!--
+                <Avatar src="./img/en.png" displaySize="Custom" customDisplaySize="1.5rem" press="changeLanguage">
+                
+                    <customData>
+                        <core:CustomData key="lang" value="en" />
+                    </customData>
+                </Avatar>
+                
+                <Avatar src="./img/fr.png" displaySize="Custom" customDisplaySize="1.5rem" press="changeLanguage">
+                    <customData>
+                        <core:CustomData key="lang" value="fr" />
+                    </customData>
+                </Avatar>
+                -->
+                
+                <ToolbarSpacer />
+                <!--<Title level="H2" text="{i18n>appTitle}" />-->
+                
+                <Title text="{i18n>appTitle}{mainmodel>/pageTitle}"/>
+                <!--                <ToolbarSpacer/>
+                <Title text="{i18n>appTitle}{mainmodel>/pageTitle}"/>-->
+                <ToolbarSpacer />
+                <Avatar src="sap-icon://customer" backgroundColor="Transparent" displayShape="Square" displaySize="Custom" customDisplaySize="1.625rem" press="InfoUser" /> <!-- Unde este functia goToLogin -->
+            </tnt:ToolHeader>
+        </tnt:header>
+        
+        <tnt:sideContent>
+            <!-- Permision este un alt model ?  este voosit pentru visible = {permissions>/access} --> 
+            <tnt:SideNavigation id="appSideNav" expanded="false" itemSelect="onItemSelect" visible="{permissions>/access}">
+                <tnt:NavigationList id="tmsAppSideNav" selectedKey="{/selectedSideNavKey}">
+                
+                    <!-- Mai avem un model  {editingState in care salvam daca s-a apasat un buton de adaug sau modific - folosit la enabled="{editingState>/allnoop}" -->    
+                    <!--
+                    <tnt:NavigationListItem text="{i18n>homeButton}"    icon="sap-icon://home" expanded="false" key="mainPage"    enabled="{editingState>/allnoop}"/>
+                    <tnt:NavigationListItem text="{i18n>produseDisponibile}" icon="sap-icon://car-rental" expanded="false" key="produseDisponibile" enabled="{editingState>/allnoop}"/>
+                    <tnt:NavigationListItem text="{i18n>asigurarileMele}" icon="sap-icon://shipping-status" expanded="false" key="asigurarileMele" enabled="{editingState>/allnoop}"/>
+                    <tnt:NavigationListItem text="{i18n>obiecteleMeleAsigurate}" icon="sap-icon://customer-order-entry" expanded="false" key="obiecteleMeleAsigurate}" enabled="{editingState>/allnoop}"/>
+                    <tnt:NavigationListItem text="{i18n>reportsButton}" icon="sap-icon://trip-report" expanded="false" key="reportsButton" enabled="{editingState>/allnoop}"/>                    
+                    -->
+                    <!-- Cum este folosit atibutul key pentru a naviga paginile in zona mainContents -->
+                    <tnt:NavigationListItem text="Home"              icon="sap-icon://home" expanded="false" key="mainPage"    enabled="{editingState>/allnoop}"/>
+                    <tnt:NavigationListItem text="Adaugare Tichet"   icon="sap-icon://add-activity" expanded="false" key="tichete"    enabled="{editingState>/allnoop}"/>
+                    <tnt:NavigationListItem text="Tichete Deschise"  icon="sap-icon://sap-box" expanded="false" key="ticheteDeschise" enabled="{editingState>/allnoop}"/>          
+                    <tnt:NavigationListItem text="Tichete in Lucru"  icon="sap-icon://workflow-tasks" expanded="false" key="ticheteInLucru" enabled="{editingState>/allnoop}"/> 
+                    <tnt:NavigationListItem text="Tichete Rezolvate" icon="sap-icon://inspection" expanded="false" key="ticheteRezolvate" enabled="{editingState>/allnoop}"/>                     
+                    <tnt:NavigationListItem text="Tichete Inchise"   icon="sap-icon://complete" expanded="false" key="ticheteInchise" enabled="{editingState>/allnoop}"/>                    
+                    
+                    
+                </tnt:NavigationList>
+                
+                <tnt:fixedItem>
+                    <tnt:NavigationList id="sideMenu" selectedKey="{/selectedSideNavFixedKey}">
+                        
+                        <tnt:NavigationListItem text="UtilizatoriXX" 
+                                                icon="sap-icon://employee"  
+                                                expanded="false" 
+                                                key="utilizatori"                                                  
+                                                enabled="{editingState>/allnoop}"/>
+                        
+                        <tnt:NavigationListItem text="Valori Liste" 
+                                                icon="sap-icon://customize"  
+                                                expanded="false"  
+                                                key="valoriListe"                                                 
+                                                enabled="{editingState>/allnoop}"/>                        
+                        
+                        <tnt:NavigationListItem text="Profil" icon="sap-icon://settings"  expanded="false" key="setari" enabled="{editingState>/allnoop}"/>                        
+                        <tnt:NavigationListItem text="Iesire" icon="sap-icon://log"  expanded="false" key="logOff" enabled="{editingState>/allnoop}"/>
+                        
+                    </tnt:NavigationList>
+                </tnt:fixedItem>
+                
+            </tnt:SideNavigation>
+        </tnt:sideContent>
+        
+        <tnt:mainContents>
+            
+            <!--visible="{permissions>/access}"-->
+            <App id="mainContents" />
+            <MessageStrip type="Error" showIcon="true" showCloseButton="false" class="sapUiMediumMargin" enableFormattedText="true"
+                          text="&lt;strong>{i18nbase>noAccess}&lt;/strong>" customIcon="sap-icon://private" >
+                <!--visible="{=!${permissions>/access}}"-->
+            </MessageStrip>
+        </tnt:mainContents>
+        
+    </tnt:ToolPage>
+</mvc:View>
